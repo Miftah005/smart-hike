@@ -1,0 +1,124 @@
+/* ===== WRAPPER ===== */
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #059669, #22c55e, #14b8a6);
+  position: relative;
+  overflow: hidden;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+/* ===== BLUR ORNAMENT ===== */
+.blur-circle {
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  filter: blur(90px);
+}
+
+.top-left {
+  top: -120px;
+  left: -120px;
+}
+
+.bottom-right {
+  bottom: -120px;
+  right: -120px;
+}
+
+/* ===== CARD ===== */
+.login-card {
+  width: 360px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  border-radius: 24px;
+  padding: 40px 32px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 10;
+}
+
+/* ===== LOGO ===== */
+.logo {
+  font-size: 52px;
+  margin-bottom: 8px;
+}
+
+/* ===== TEXT ===== */
+.title {
+  font-size: 28px;
+  font-weight: 800;
+  color: #065f46;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #4b5563;
+  margin-bottom: 24px;
+}
+
+/* ===== INPUT ===== */
+.input {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+  border-radius: 14px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.input:focus {
+  border-color: #10b981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.25);
+}
+
+/* ===== BUTTON ===== */
+.btn-login {
+  width: 100%;
+  padding: 14px;
+  border-radius: 14px;
+  background: #059669;
+  color: white;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-login:hover {
+  background: #047857;
+  transform: translateY(-1px);
+}
+
+.btn-login:active {
+  transform: scale(0.96);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 20px;
+}
+
+/* ===== ANIMATION ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.7s ease-out;
+}
